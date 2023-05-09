@@ -27,7 +27,10 @@ media
 # Python #
 *.py[cod]
 *$py.class
-
+./venv
+./venv/
+venv
+*/venv
 # Distribution / packaging
 .Python build/
 develop-eggs/
