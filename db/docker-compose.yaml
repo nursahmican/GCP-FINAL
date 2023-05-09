@@ -1,0 +1,11 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: ADMIN
+      POSTGRES_PASSWORD: 'ADMIN12345'
+      POSTGRES_DB: VITAEHR
+    ports:
+      - "5432:5432"
+

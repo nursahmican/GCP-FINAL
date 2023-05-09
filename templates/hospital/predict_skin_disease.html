@@ -1,0 +1,31 @@
+{% extends 'hospital/doctor_base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+
+<div class="jumbotron" style="margin: bottom 0px;">
+  <h1 class="display-4" style="text-align:center;">Find Skin Disease</h1>
+  <p class="lead">Enter patient information and upload an image</p>
+  <div class="h-100 d-flex align-items-center justify-content-center">
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+            {% for field in form %}
+                <div class="fieldWrapper">
+                    {{ field.errors }}
+                    {{ field.label_tag }} {{ field }}
+                </div>
+            {% endfor %}
+            <a href="/result">
+                <button style="margin-top: 20px;" type="submit" class="btn btn-danger" >Upload</button>
+            </a>
+            
+            
+    </form>
+
+  </div>
+</div>
+{% endblock content %}
+
+
+

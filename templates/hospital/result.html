@@ -1,0 +1,47 @@
+{% extends 'hospital/doctor_base.html' %}
+{% load static %}
+{% block title %}
+
+    Skin Disease Result
+{% endblock %}
+
+{% block content %}
+
+
+<center><h1 style="color: white !important;">{{result.predicted_label}}</h1>
+    <img src="/media/{{result.image.image}}" width="350" height="250" alt="" >
+{% if result.vascular_lesion != "None" %}
+<p>Vascular Lesion: {{result.vascular_lesion}}</p>
+{% endif %}
+
+{% if result.squamous_cell_carcinoma != "None" %}
+<p>Squamous Cell Carcinoma: {{result.squamous_cell_carcinoma}}</p>
+{% endif %}
+
+{% if result.melanoma != None %}
+<p>Melanoma: {{result.melanoma}}</p>
+{% endif %}
+
+{% if result.melanocytic_nevus != None %}
+<p>Melanocytic Nevus: {{result.melanocytic_nevus}}</p>
+{% endif %}
+
+{% if result.dermatofibroma != None %}
+<p>Dermatofibroma: {{result.dermatofibroma}}</p>
+{% endif %}
+
+{% if result.benign_keratosis != None %}
+<p>Benign keratosis: {{result.benign_keratosis}}</p>
+{% endif %}
+
+{% if result.basal_cell_carcinoma != None %}
+<p>Basal cell carcinoma: {{result.basal_cell_carcinoma}}</p>
+{% endif %}
+
+{% if result.actinic_keratosis != None %}
+<p>Actinic keratosis: {{result.actinic_keratosis}}</p>
+{% endif %}
+
+</center>
+
+{% endblock %}
