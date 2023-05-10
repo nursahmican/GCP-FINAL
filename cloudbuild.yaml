@@ -17,7 +17,7 @@ steps:
   #dir: 'my-app-vue'
 # Step 3
 - name: 'gcr.io/cloud-builders/kubectl'
-  args: ['apply', '-f', 'k8s/']
+  args: ['apply', '-f', '*']
   env:
   - 'CLOUDSDK_COMPUTE_ZONE=europe-west4'
   - 'CLOUDSDK_CONTAINER_CLUSTER=vitaehr'
