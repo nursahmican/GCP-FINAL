@@ -18,3 +18,34 @@ spec:
       containers:
       - name: "vita"
         image: "gcr.io/regal-campaign-385913/github.com/nursahmican/gcp-final:latest"
+        env:
+        - name: "PROD"
+          valueFrom:
+            configMapKeyRef:
+              key: "PROD"
+              name: "vita-config-eu1w"
+        - name: "DATABASE_NAME"
+          valueFrom:
+            configMapKeyRef:
+              key: "DATABASE_NAME"
+              name: "vita-config-eu1w"
+        - name: "DATABASE_USER"
+          valueFrom:
+            configMapKeyRef:
+              key: "DATABASE_USER"
+              name: "vita-config-eu1w"
+        - name: "DATABASE_PASSWORD"
+          valueFrom:
+            configMapKeyRef:
+              key: "DATABASE_PASSWORD"
+              name: "vita-config-eu1w"
+        - name: "DATABASE_HOST"
+          valueFrom:
+            configMapKeyRef:
+              key: "DATABASE_HOST"
+              name: "vita-config-eu1w"
+        - name: "DATABASE_PORT"
+          valueFrom:
+            configMapKeyRef:
+              key: "DATABASE_PORT"
+              name: "vita-config-eu1w"
