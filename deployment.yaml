@@ -16,5 +16,5 @@ spec:
         app: "vita"
     spec:
       containers:
-      - name: "gcp-final-sha256-1"
+      - name: "vita"
         image: "gcr.io/regal-campaign-385913/github.com/nursahmican/gcp-final:latest"
