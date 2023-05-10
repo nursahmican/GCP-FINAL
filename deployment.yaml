@@ -23,29 +23,29 @@ spec:
           valueFrom:
             configMapKeyRef:
               key: "PROD"
-              name: "vita-config-eu1w"
+              name: "vita-config-tgk3"
         - name: "DATABASE_NAME"
           valueFrom:
             configMapKeyRef:
               key: "DATABASE_NAME"
-              name: "vita-config-eu1w"
+              name: "vita-config-tgk3"
         - name: "DATABASE_USER"
           valueFrom:
             configMapKeyRef:
               key: "DATABASE_USER"
-              name: "vita-config-eu1w"
+              name: "vita-config-tgk3"
         - name: "DATABASE_PASSWORD"
           valueFrom:
             configMapKeyRef:
               key: "DATABASE_PASSWORD"
-              name: "vita-config-eu1w"
+              name: "vita-config-tgk3"
         - name: "DATABASE_HOST"
           valueFrom:
             configMapKeyRef:
               key: "DATABASE_HOST"
-              name: "vita-config-eu1w"
+              name: "vita-config-tgk3"
         - name: "DATABASE_PORT"
           valueFrom:
             configMapKeyRef:
               key: "DATABASE_PORT"
-              name: "vita-config-eu1w"
+              name: "vita-config-tgk3"
